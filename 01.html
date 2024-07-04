@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html 기초 1강 - block and inline</title>
+
+    <style>
+        h1 {background: yellow;}
+        h2 {background: yellowgreen;}
+        p {background: orange;}
+        div{background: red; width: 500px; height: 500px; margin: 50px 100px;}
+        ul{background: skyblue;}
+        ul li{background: purple;}
+        /* 클래스 스타일은 .을 붙임 */
+        /* box-sizing:border-box : padding을 줄지라도 설정한 값에 padding 포함
+        넓이와 높이 값에 padding 값이 포함된다, 박스사이즈를 늘리고 싶지 않다면
+        이용하자 */
+        .box{width:300px;  height:300px; background: yellow; margin:80px; padding :50px; box-sizing: border-box; text-align: center; display: inline-block;}
+    </style>
+
+
+</head>
+<body>
+    <!-- 블록속성(한줄 차지,줄바꿈) -->
+     <h1>제목1</h1> <!--로고-->
+     <h2>제목2</h2> <!--각 섹션의 제목-->
+     <h3>제목3</h3> <!-- 섹션안의 서브제목-->
+     <h4>제목4</h4>
+     <h5>제목5</h5>
+     <h6>제목6</h6>
+     <p>단락<br>형성</p>
+     <div><!-- 영역을 생성하는 비어있는 상자-->
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex doloribus ut est voluptatum. Cupiditate nam facilis ab, corporis fugiat incidunt ullam vel soluta accusamus quam rerum dolore libero dolor ducimus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex doloribus ut est voluptatum. Cupiditate nam facilis ab, corporis fugiat incidunt ullam vel soluta accusamus quam rerum dolore libero dolor ducimus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex doloribus ut est voluptatum. Cupiditate nam facilis ab, corporis fugiat incidunt ullam vel soluta accusamus quam rerum dolore libero dolor ducimus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex doloribus ut est voluptatum. Cupiditate nam facilis ab, corporis fugiat incidunt ullam vel soluta accusamus quam rerum dolore libero dolor ducimus.</p>
+     </div>
+     <ul>
+        <li>리스트1</li> <!-- 순서가 없는 목록-->
+        <li>리스트2</li>
+        <li>리스트3</li>
+     </ul>
+     <p>그 밖에 시멘트 태그 header, nav, section, aticle, aside, footer 등이 있습니다.</p>
+     <p>block 엘리먼트로는 모든 인라인 요소를 포함할 수 있고 일부 블록요소도 포함하며 
+        width, height, margin(밖여백), padding(안여백)
+        등을 사용하여 레이아웃을 수정할 수 있습니다.
+        display: inline-block명령어로 블록속성에 인라인(줄바꿈이 아닌 나열) 속성을 추가할 수 있습니다.
+     </p>
+     <!-- 시멘트 태그는 웹표준의 약속으로 영역을 나눔 -->
+      <!-- 클래스는 이름을 중복으로 사용 가능, id는 1번 사용 가능-->
+     <div class="box">박스1</div>
+     <div class="box">박스2</div>
+     <div class="box">박스3</div>
+
+</body>
+</html>
