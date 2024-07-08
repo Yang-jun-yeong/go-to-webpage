@@ -1,0 +1,11 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Noto+Sans+KR:wght@100..900&display=swap');
+
+font-family: "Noto Sans KR", sans-serif;
+
+body {font-size : 15px;}
+.en1 { font-family: "Dancing Script", cursive;}
+.txt1 {font-size:48px; font-weight: bold; color : #1d51b4; letter-spacing:2rem;}
+.txt2 {font-size: 62px; font-weight: bold; text-transform: uppercase;} /*uppercase = 영어 소문자를 대문자로*/
+.txt3 {font-size: 80px; font-weight:bold; color:#00ceff; text-shadow: 10px 5px 5px rgba(90, 90, 90, 0.79)} /*그림자 x축 y축 퍼짐정도*/
+.txt4 {font-size:60px; color: #888;}
