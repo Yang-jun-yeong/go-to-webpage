@@ -1,0 +1,31 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+
+/* reset */
+* {padding: 0; margin: 0;} /* *=전체 */
+li {list-style:none;}
+
+/*layout*/
+.en {font-family: "Archivo Black", sans-serif;}
+body{ }
+.wrap {width: 100%; }
+.contents { width: 1280px; margin:80px auto; }
+/* 상하는 80, 좌우는 오토로 주어 중앙으로 */
+
+/*top*/
+.contents ul.top{width:100%; overflow:hidden; margin-bottom: 80px;}/*사라진 부모 높이값을 다시 보이게*/
+.contents ul.top li{float:left;}/*밑에 있던 글이 옆으로 이동*/
+/*자식요소에게 float를 줄경우 부모요소의 높이값을 상실*/
+.contents ul.top li:nth-child(1){width: 40%;font-size: 57px; line-height:1.2;} /*줄간격 : line-height*/
+.contents .top li:nth-child(2){width: 60%; font-size: 14px; padding-top: 30px; line-height: 2; padding-left: 10px; box-sizing: border-box;} 
+/*부모클래스에 속해있는 자식클래스중 선택 nth-child(?)*/
+
+/*bottom*/
+.contents .bootom{width:80%; margin:0 auto; overflow: hidden;}
+.contents .bootom li{float: left; width: 22.5%;}
+.contents .bootom li:nth-child(1),.contents .bootom li:nth-child(2){width:15%;}
+.contents .bootom li:nth-child(4) {width: 25%;}
+.contents .bootom li .subHeading{font-size: 14px; color: #aaa; margin-bottom: 20px;}
+.contents .bootom li .txt{font-size: 18px; font-weight: bold;}
+.contents .bootom li .txt span{font-size: 55px; font-weight: bold;}
