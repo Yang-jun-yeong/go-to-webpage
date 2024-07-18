@@ -1,0 +1,65 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700&display=swap');
+
+/*reset*/
+/* 기본값 항상 세팅 */
+* {margin: 0; padding: 0;}
+li {list-style: none;}
+a {text-decoration: none; color: inherit;}
+
+/*layout*/
+body {font-family: 'Noto Sans KR', sans-serif;}
+.wrap {width: 100%;  overflow: hidden;}
+/* wrap은 overflow : hidden이 세트 */
+.contents {width: 1280px; margin: 50px auto;  overflow: hidden;}
+/*left*/
+.contents .left {width: 55%; float: left; padding: 40px 39px 50px; box-sizing: border-box; color:#fff; background: url(../img/06-1.png)no-repeat right 0px bottom 0px/cover; border:1px solid #bbb;}
+/*상 좌우 하*/ 
+.contents .left h2 {font-size: 40px; font-weight: normal; letter-spacing: 1px; text-shadow: 2px 2px 2px rgba(13, 13, 13, 0.21); margin-bottom: 13px;}
+.contents .left p{font-size: 16px; margin-bottom: 25px; }
+/*ul.percent*/
+.contents .left ul.percent {width: 55%;overflow: hidden;margin-bottom: 25px;}
+.contents .left ul.percent li {float: left;}
+.contents .left ul.percent li:nth-child(1) {font-size: 26px; margin-right: 20px; }
+.contents .left ul.percent li:nth-child(2){font-size: 10px; line-height: 1.3;  padding-top: 7px;}
+/*ul.btn*/
+.contents .left ul.btn {width: 55%; overflow: hidden;margin-bottom: 23px;}
+.contents .left ul.btn li {float:left; }
+.contents .left ul.btn li:nth-child(1) {margin-right: 10px; }
+.contents .left ul.btn li:nth-child(1) span {margin-right: 10px;}
+.contents .left ul.btn li:nth-child(2) span {margin-left: 10px;}
+.contents .left ul.btn li a {font-size: 16px;  padding: 8px 20px;box-sizing: border-box;display: block; border-radius: 20px; border: 1px solid #fff;}
+/* a는 인라인 요소이다 보니 padding이 안먹힌다.  그래서 속성을 변경해주는데 display : block */
+
+
+/*right*/
+.contents .right {width: 45%; float: right;}
+/* 자식요소의 float는 부모요소의 높이값을 상실하게 만드니 overflow : hidden */
+.contents .right ul {width: 100%;overflow: hidden; padding: 24px 0 24px 0; border:1px solid #ddd; box-sizing: border-box; border-left: 0px;}
+.contents .right ul:nth-child(1) {border-bottom: 0;}
+.contents .right ul li {float: left;}
+.contents .right ul li:nth-child(1) {width: 30%;  text-align: center; margin-right: 10px;}
+.contents .right ul li i {font-size: 100px;  padding-top: 12px; }
+
+.contents .right ul li p.tit {font-size: 18px;margin-bottom: 10px;}
+.contents .right ul li p.txt {font-size: 14px; color: #bbb;margin-bottom: 10px;}
+.contents .right ul li .btn { width: 180px; display: block;  padding: 8px 3px; box-sizing: border-box; border-radius: 20px; border: 1px solid #bbb; text-align: center;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
